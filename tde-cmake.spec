@@ -7,7 +7,7 @@
 %define tde_version 14.1.5
 %endif
 %define tde_pkg tde-cmake
-%define pkg_rel 2
+%define pkg_rel 3
 
 %define cmake_datadir %{_datadir}/cmake
 
@@ -23,14 +23,13 @@ URL:		http://www.trinitydesktop.org/
 
 License:	GPLv2+
 
-#Vendor:		Trinity Desktop
-#Packager:	Francois Andriot <francois.andriot@free.fr>
 
 BuildArch:	noarch
 
 Source0:		https://mirror.ppa.trinitydesktop.org/trinity/releases/R%{tde_version}/main/dependencies/%{tarball_name}-%{tde_version}%{?preversion:~%{preversion}}.tar.xz
 
 BuildSystem:    cmake
+
 BuildOption:    -DCMAKE_BUILD_TYPE="RelWithDebInfo"
 BuildOption:    -DBUILD_ALL=ON
 BuildOption:    -DWITH_ALL_OPTIONS=ON
