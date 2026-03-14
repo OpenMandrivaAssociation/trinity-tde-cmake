@@ -1,22 +1,12 @@
-#
-# Please submit bugfixes or comments via http://www.trinitydesktop.org/
-#
-
-# TDE variables
-%if "%{?tde_version}" == ""
-%define tde_version 14.1.5
-%endif
 %define tde_pkg tde-cmake
-%define pkg_rel 3
 
 %define cmake_datadir %{_datadir}/cmake
 
 %define tarball_name %{tde_pkg}-trinity
 
-
 Name:		trinity-%{tde_pkg}
-Version:	%{tde_version}
-Release:	%{?!preversion:%{pkg_rel}}%{?preversion:0_%{preversion}}%{?dist}
+Version:	14.1.5
+Release:	4
 Summary:	TDE CMake modules
 Group:		Development/Libraries/C and C++
 URL:		http://www.trinitydesktop.org/
@@ -26,7 +16,7 @@ License:	GPLv2+
 
 BuildArch:	noarch
 
-Source0:		https://mirror.ppa.trinitydesktop.org/trinity/releases/R%{tde_version}/main/dependencies/%{tarball_name}-%{tde_version}%{?preversion:~%{preversion}}.tar.xz
+Source0:		https://mirror.ppa.trinitydesktop.org/trinity/releases/R%{version}/main/dependencies/%{tarball_name}-%{version}.tar.xz
 
 BuildSystem:    cmake
 
