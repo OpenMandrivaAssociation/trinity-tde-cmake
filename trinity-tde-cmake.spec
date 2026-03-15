@@ -6,7 +6,7 @@
 
 Name:		trinity-%{tde_pkg}
 Version:	14.1.5
-Release:	4
+Release:	5
 Summary:	TDE CMake modules
 Group:		Development/Libraries/C and C++
 URL:		http://www.trinitydesktop.org/
@@ -25,9 +25,6 @@ BuildOption:    -DBUILD_ALL=ON
 BuildOption:    -DWITH_ALL_OPTIONS=ON
 
 BuildRequires:	desktop-file-utils
-
-Obsoletes:		trinity-cmake < %{version}-%{release}
-Provides:		trinity-cmake = %{version}-%{release}
 
 %description
 TDE uses its own set of modules and macros to simplify CMake rules.
