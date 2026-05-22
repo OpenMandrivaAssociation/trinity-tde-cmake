@@ -5,8 +5,8 @@
 %define tarball_name %{tde_pkg}-trinity
 
 Name:		trinity-%{tde_pkg}
-Version:	14.1.5
-Release:	5
+Version:	14.1.6
+Release:	1
 Summary:	TDE CMake modules
 Group:		Development/Libraries/C and C++
 URL:		http://www.trinitydesktop.org/
